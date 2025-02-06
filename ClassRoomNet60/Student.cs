@@ -40,6 +40,8 @@ namespace ClassRoomNet60
             {
                 return "Efterår";
             }
+
+
         }
     }
 }

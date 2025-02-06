@@ -24,7 +24,6 @@ internal class Program
             Console.WriteLine($"- {student.Name} blev født i {student.Season()}");
         }
 
-        
-
+        classRoom.CountSeason();
     }
 }
