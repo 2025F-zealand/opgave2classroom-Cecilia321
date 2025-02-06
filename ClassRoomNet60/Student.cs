@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,18 @@ namespace ClassRoomNet60
     internal class Student
     {
         public string Name { get; }
-        public int BirthMonth { get;}
+        public int BirthMonth {
+            get => BirthMonth;
+            set
+            {
+                if (value < 1 || value > 12)
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+
+                BirthMonth = value;
+            } // BirthMonth skal være mellem 1 og 12, ellers kastes en ArgumentOutOfRangeException
+        }
         public int BirthDay { get;}
 
 
@@ -18,8 +30,8 @@ namespace ClassRoomNet60
             Name = name;
             BirthMonth = birthMonth;
             BirthDay = birthDay;
-
         }
+       
 
         //There must now be implemented a method "season" the returntype is a string. The methods returns what season for the student's birthday.
         public string Season()
