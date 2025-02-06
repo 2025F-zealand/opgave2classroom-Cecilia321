@@ -11,8 +11,8 @@ internal class Program
         classRoom.SemesterStart = new DateTime(2019, 8, 26);
         classRoom.StudentList = new List<Student>();
 
-        classRoom.StudentList.Add(new Student("Cecilia", 03, 14));
-        classRoom.StudentList.Add(new Student("rebekka", 04, 13));
+        classRoom.StudentList.Add(new Student("Cecilia", 03, 11));
+        classRoom.StudentList.Add(new Student("rebekka", 04, 11));
         classRoom.StudentList.Add(new Student("Sarah", 01, 07));
 
         Console.WriteLine($"Class Name: {classRoom.ClassName}");

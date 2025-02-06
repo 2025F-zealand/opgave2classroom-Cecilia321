@@ -9,21 +9,24 @@ namespace ClassRoomNet60
 {
     internal class Student
     {
-        public string Name { get; }
-        public int BirthMonth {
-            get => BirthMonth;
+        public string Name { get; private set; }
+        private int birthMonth;
+        public int BirthDay { get; private set; }
+
+
+        public int BirthMonth
+        {
+            get => birthMonth;
             set
             {
                 if (value < 1 || value > 12)
                 {
-                    throw new ArgumentOutOfRangeException();
+                    throw new ArgumentOutOfRangeException(nameof(value), "skal være mellem 1 og 12");
                 }
 
-                BirthMonth = value;
+                birthMonth = value;
             } // BirthMonth skal være mellem 1 og 12, ellers kastes en ArgumentOutOfRangeException
         }
-        public int BirthDay { get;}
-
 
         public Student(string name, int birthMonth, int birthDay)
         {
@@ -33,7 +36,7 @@ namespace ClassRoomNet60
         }
        
 
-        //There must now be implemented a method "season" the returntype is a string. The methods returns what season for the student's birthday.
+        
         public string Season()
         {
             if (BirthMonth == 12 || BirthMonth == 1 || BirthMonth == 2)
