@@ -20,5 +20,26 @@ namespace ClassRoomNet60
             BirthDay = birthDay;
 
         }
+
+        //There must now be implemented a method "season" the returntype is a string. The methods returns what season for the student's birthday.
+        public string Season()
+        {
+            if (BirthMonth == 12 || BirthMonth == 1 || BirthMonth == 2)
+            {
+                return "Vinter";
+            }
+            else if (BirthMonth == 3 || BirthMonth == 4 || BirthMonth == 5)
+            {
+                return "Forår";
+            }
+            else if (BirthMonth == 6 || BirthMonth == 7 || BirthMonth == 8)
+            {
+                return "Sommer";
+            }
+            else
+            {
+                return "Efterår";
+            }
+        }
     }
 }

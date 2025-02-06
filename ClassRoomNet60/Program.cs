@@ -21,8 +21,10 @@ internal class Program
 
         foreach (var student in classRoom.StudentList)
         {
-            Console.WriteLine($"- {student.Name}");
+            Console.WriteLine($"- {student.Name} blev født i {student.Season()}");
         }
+
+        
 
     }
 }
