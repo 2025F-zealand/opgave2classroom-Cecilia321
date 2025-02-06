@@ -8,9 +8,9 @@ namespace ClassRoomNet60
 {
     internal class Student
     {
-        private string Name { get; }
-        private int BirthMonth { get;}
-        private int BirthDay { get;}
+        public string Name { get; }
+        public int BirthMonth { get;}
+        public int BirthDay { get;}
 
 
         public Student(string name, int birthMonth, int birthDay)
