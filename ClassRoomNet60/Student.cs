@@ -8,16 +8,17 @@ namespace ClassRoomNet60
 {
     internal class Student
     {
-        private string name { get; }
-        private int birthMonth { get;}
-        private int birthDay { get;}
+        private string Name { get; }
+        private int BirthMonth { get;}
+        private int BirthDay { get;}
 
 
         public Student(string name, int birthMonth, int birthDay)
         {
-            this.name = name;
-            this.birthMonth = birthMonth;
-            this.birthDay = birthDay;
+            Name = name;
+            BirthMonth = birthMonth;
+            BirthDay = birthDay;
+
         }
     }
 }
