@@ -8,14 +8,12 @@ namespace ClassRoomNet60
 {
     internal class ClassRoom
     {
-        private string ClassName { get; set; }
-        private List<Student> StudentList { get; set; }
-        private DateTime SemesterStart { get; set; }
+        public string ClassName { get; set; }
+        public List<Student> StudentList { get; set; }
+        public DateTime SemesterStart { get; set; }
 
 
-        public ClassRoom()
-        {
-            
-        }
+       
+
     }
 }
