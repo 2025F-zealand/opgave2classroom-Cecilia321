@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClassRoomNet60
 {
-    internal class Student
+    public class Student
     {
         public string Name { get; private set; }
         private int birthMonth;
@@ -55,7 +55,6 @@ namespace ClassRoomNet60
             {
                 return "Efterår";
             }
-
 
         }
     }
